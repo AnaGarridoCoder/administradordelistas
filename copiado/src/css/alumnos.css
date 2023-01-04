@@ -1,0 +1,21 @@
+p {
+	font-family: 'Archeologicaps';
+	font-size: 1.25rem;
+	color: rgb(0, 0, 7);
+	text-align: center;
+}
+
+p:hover {
+	color: rgb(123, 17, 198);
+}
+
+#resultado {
+	font-family:'Archeologicaps';
+	margin-left: 5rem;
+}
+
+
+
+
+
+
