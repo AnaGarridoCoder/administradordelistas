@@ -1,22 +1,26 @@
 @font-face {
-    font-family: 'Candara';
-    src: url(fonts\fuentes\candara-font-family\Candara.ttf);
+    font-family: 'DisneyHeroic';
+    src: url(/fonts/DisneyHeroic.ttf);
     font-weight: normal;
     font-style: normal;
 
 }
 
 body {
-    font-family: 'Candara';
+    font-family: 'DisneyHeroic';
     background-image: url(/fondo.jpg);
 }
 
-#navbarText {
-    font-family: 'Candara';
-    font-size: larger;
+nav{
+    height: 3.1em;
+    font-family: 'DisneyHeroic';
+    font-size: medium;
+    padding-left: 13em;
 }
 
+
 .logo {
+    position: relative;
     width: 150px;
     height: 50px;
 
@@ -25,7 +29,6 @@ body {
 #popup {
     padding-left: 35em;
     border-radius: 50%;
-
 }
 
 .button {
@@ -87,10 +90,27 @@ td {
     font-size: large;
 }
 
+.container{
+    font-size: smaller;
+    height: 20em;
+    background-color: rgba(17, 125, 116, 0.356);
+    margin-top: 30em;
+}
 
 /* responsive */
 @media (min-width: 360px) and (max-width: 640px) {
 
+    nav{
+        height: 3.5em;
+        font-family: 'DisneyHeroic';
+        font-size: medium;
+        padding-left: 5em;
+    }
+    .logo{
+        height: 40px;
+        width: 100px;
+        margin-left: 2.5em;
+    }
     #popup {
         padding-left: 5em;
         padding-right: 5em;
@@ -98,26 +118,24 @@ td {
 
     .button {
         position: relative;
-        padding-left: 9em;
+        padding-left: 8em;
         padding-bottom: 1em;
-        justify-content: center;
-
 
     }
 
     .button2 {
         position: relative;
-        padding-left: 9em;
+        padding-left: 8em;
         padding-bottom: 1em;
-        justify-content: center;
+   
 
     }
 
     .button3 {
         position: relative;
-        padding-left: 9em;
+        padding-left: 8em;
         padding-bottom: 2em;
-        justify-content: center;
+   
     }
 
 
@@ -153,4 +171,9 @@ td {
         color: rgb(14, 50, 50);
         font-size: medium;
     }
+    .text-center-text-lg-start-border-border-white-mt-xl-5-pt-4{
+        font-size: smaller;
+        background-color: rgba(17, 125, 116, 0.356);
+
+}
 }
