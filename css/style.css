@@ -52,6 +52,10 @@ nav{
 
 }
 
+.addbutton{
+    padding-bottom: 1em;
+}
+
 .name {
     height: em;
     text-align: center;
