@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: 'DisneyHeroic';
+    font-family: 'DisneyHeroic' !important;
     background-image: url(/fondo.jpg);
 }
 
@@ -16,6 +16,7 @@ nav{
     font-family: 'DisneyHeroic';
     font-size: medium;
     padding-left: 13em;
+    background-color: rgb(14, 50, 50) !important;
 }
 
 
@@ -31,21 +32,21 @@ nav{
     border-radius: 50%;
 }
 
-.button {
+.buttoncrear {
     position: relative;
     padding-left: 40em;
     padding-bottom: 0em;
 
 }
 
-.button2 {
+.buttoncargar {
     position: relative;
     padding-left: 75em;
     padding-bottom: 1em;
 
 }
 
-.button3 {
+.buttonguardar {
     position: relative;
     padding-left: 75em;
     padding-bottom: 2em;
@@ -73,7 +74,7 @@ nav{
 }
 
 .tableform {
-    padding-left: 27em;
+    padding-left: 22em;
 }
 
 th {
@@ -120,14 +121,14 @@ td {
         padding-right: 5em;
     }
 
-    .button {
+    .buttoncrear {
         position: relative;
         padding-left: 8em;
         padding-bottom: 1em;
 
     }
 
-    .button2 {
+    .buttoncargar {
         position: relative;
         padding-left: 8em;
         padding-bottom: 1em;
@@ -135,7 +136,7 @@ td {
 
     }
 
-    .button3 {
+    .buttonguardar {
         position: relative;
         padding-left: 8em;
         padding-bottom: 2em;
@@ -154,7 +155,7 @@ td {
     }
 
     .tableform {
-        padding-left: 0.3em;
+        padding-left: 0em;
     }
 
     th {

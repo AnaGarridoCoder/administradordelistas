@@ -2,6 +2,7 @@
     font-family: 'archeologicapsregular';
 }
 
-form{
-    
+form {
+    display: grid;
+    grid-column: auto;
 }
