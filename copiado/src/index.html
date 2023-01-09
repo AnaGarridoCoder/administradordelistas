@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador de listas</title>
+    <link rel="stylesheet" href="/structure.css">
+    <link rel="stylesheet" href="/structure.css">
+    <link rel="stylesheet" href="/alumnos.css">
+
+</head>
+
+<body>
+    <div class="grid-container"></div>
+    <header class="header">
+        <div class="name"> ADMINISTRADOR DE LISTAS</div>
+        <div class="texto">INSTRUCCIONES</div>
+        <button class="btn-abrir-pop1" id="btn-abrir-pop1"> Nuevo Jugador</button>
+        </div>
+
+        </div>
+        <div class="overlay" id="overlay">
+            <div class="popup" id="popup">
+                <img id="gift2"
+                    src="https://www.gifsanimados.org/data/media/41/rayo-y-relampago-imagen-animada-0013.gif"
+                    alt="Imagen">
+
+                <div class="btn-cerrar-popup1" id="btn-cerrar-popup1"><i class="fa fa-times"></i></div>
+                <h3>JUGUEMOS</h3>
+                <h4> y diviertete aprendiendo.</h4>
+                <br>
+                <form action="">
+                    <div class="contenedor-input">
+                        <label>
+                            <h5>Nuevo jugador</h5>
+                        </label>
+                        <input type="text" id="Nombre_input">
+                    </div>
+                    <input type="button" id="btnAgregarElemento" value="Agregar"
+                        onclick="agregarElemento();"></input><!-- El evento onclick ejecuta una cierta funcionalidad cuando se hace clic en un botón. -->
+                    <input type="button" id="btneliminarArreglo" value="Eliminar" onclick="eliminarElemento();"></input>
+
+                </form>
+            </div>
+
+    </header>
+
+        <script src="src\js\pop-up.js" type="text/javascript"></script>
+</body>
+
+</html>

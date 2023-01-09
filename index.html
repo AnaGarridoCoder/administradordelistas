@@ -1,12 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Administrador de listas</title>
+
+  <link rel="stylesheet" href="/src/css/style.css">
+  <link rel="stylesheet" href="/src/css/pop-up.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
+
 <body>
-    
+  <div class="grid-container"></div>
+
+  <!-- bootstrap for the navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"><img class="logo" src="/logo.png" alt="logo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+      aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Inicio <span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Ruletas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Otros juegos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Qué ofrecemos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sobre nosotras</a>
+        </li>
+      </ul>
+      <span class="navbar-text">
+
+      </span>
+    </div>
+  </nav>
+
+  <div class="name">Administrador de listas</div>
+  <div class="buttoncrear"><input type="button" name="crearlista" id="open" value="Crear lista"></div>
+  <div class="buttoncargar"><input type="button" name="cargarlista" value="Cargar lista"></div>
+  <div class="buttonguardar"><input type="button" name="guardarlista" value="Guardar lista"></div>
+
+  <div id="popup" style="display: none;">
+    <div><a href="#" id="close">X</a></div>
+    <h1>Nueva Lista</h1>
+    <form id="Studentsform">
+      <div class="formField">
+        <label for="nameData">Alumno</label>
+        <input id="nameData" name="nameData" placeholder="Nombre del estudiante" type="text" required>
+      </div>
+      <div class="formField">
+        <label for="ageData">Diosas salvadas</label>
+        <input id="savedData" name="savedData" placeholder="0" min="0" max="99" type="number" minlength="3"
+          maxlength="30" required>
+      </div>
+      <div class="formField">
+        <label for="evaluationData">Nota</label>
+        <input id="evaluationData" name="evaluationData" placeholder="0" min="0" max="10" type="number" required>
+
+        <div class="dbutton">
+          <label id="dbutton" name="Eliminar">
+        </div>
+
+
+      </div>
+      <div class="addbutton"><button>Añadir</button></div>
+
+
+    </form>
+  </div>
+
+  <div class="tableform">
+    <table id="studentsTable">
+      <tr>
+        <th>
+          Alumnos
+        </th>
+        <th>
+          Diosas salvadas
+        </th>
+        <th>
+          Nota final
+        </th>
+        <th>
+          Eliminar
+        </th>
+      </tr>
+
+    </table>
+  </div>
+  <!-- bootstrap for the footer -->
+  <!-- Remove the container if you want to extend the Footer to full width. -->
+  <div class="container">
+
+    <footer class="text-center-text-lg-start-border-border-white-mt-xl-5-pt-4">
+      <!-- Grid container -->
+      <div class="container-p-4">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <h5 class="text-uppercase mb-4">Nuestro mundo</h5>
+
+            <ul class="list-unstyled mb-4">
+              <li>
+                <a href="#!" class="text-white">Sobre nosotras</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Otras aplicaiones</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Nuestra filosofía</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Nuestros socios</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <h5 class="text-uppercase mb-4">Asistencia</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!" class="text-white">Contáctanos</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Información de compra</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Servicio de postventa</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Pagos</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <h5 class="text-uppercase mb-4">Lugares de interés </h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!" class="text-white">Obra social</a>
+              <li>
+                <a href="#!" class="text-white">Únete a nosotras</a>
+              </li>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <h5 class="text-uppercase mb-4">Regístrate en nuestra newsletter</h5>
+
+            <div class="form-outline form-white mb-4">
+              <input type="email" id="form5Example2" class="form-control" />
+              <label class="form-label" for="form5Example2">Email</label>
+            </div>
+
+            <button type="submit" class="btn btn-outline-white btn-block">Subscríbete</button>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3 border-top border-white">
+        © 2020 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+  </div>
+  <!-- End of .container -->
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="/src/js/index.js" type="text/javascript"></script>
+  <script src="/src/js/popup.js" type="text/javascript"></script>
+  <script src="/src/js/functions.js" type="text/javascript"></script>
+  <script src="/src/js/functions.test.js" type="text/javascript"></script>
+
+
 </body>
+
 </html>

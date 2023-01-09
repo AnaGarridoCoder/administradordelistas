@@ -1,0 +1,184 @@
+@font-face {
+    font-family: 'DisneyHeroic';
+    src: url(/fonts/DisneyHeroic.ttf);
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    font-family: 'DisneyHeroic' !important;
+    background-image: url(/fondo.jpg);
+}
+
+nav{
+    height: 3.1em;
+    font-family: 'DisneyHeroic';
+    font-size: medium;
+    padding-left: 13em;
+    background-color: rgb(14, 50, 50) !important;
+}
+
+
+.logo {
+    position: relative;
+    width: 150px;
+    height: 50px;
+
+}
+
+#popup {
+    padding-left: 35em;
+    border-radius: 50%;
+}
+
+.buttoncrear {
+    position: relative;
+    padding-left: 40em;
+    padding-bottom: 0em;
+
+}
+
+.buttoncargar {
+    position: relative;
+    padding-left: 75em;
+    padding-bottom: 1em;
+
+}
+
+.buttonguardar {
+    position: relative;
+    padding-left: 75em;
+    padding-bottom: 2em;
+
+}
+
+.addbutton{
+    padding-bottom: 1em;
+}
+
+.name {
+    height: em;
+    text-align: center;
+    padding: 0em;
+    font-size: x-large;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(14, 50, 50);
+
+}
+
+.tableform {
+    padding-left: 15em;
+
+}
+
+.tableform {
+    padding-left: 22em;
+}
+
+th {
+    padding: 1.5em;
+    text-align: center;
+    border: solid 2px rgba(17, 125, 116, 0.356);
+    background-color: rgba(17, 125, 116, 0.356);
+    color: rgb(14, 50, 50);
+    font-size: larger;
+    text-transform: uppercase;
+}
+
+td {
+    border: solid 2px rgba(17, 125, 116, 0.356);
+    text-align: center;
+    background-color: rgba(17, 125, 116, 0.356);
+    color: rgb(14, 50, 50);
+    font-size: large;
+}
+
+.container{
+    font-size: smaller;
+    height: 20em;
+    background-color: rgba(17, 125, 116, 0.356);
+    margin-top: 30em;
+}
+
+/* responsive */
+@media (min-width: 360px) and (max-width: 640px) {
+
+    nav{
+        height: 3.5em;
+        font-family: 'DisneyHeroic';
+        font-size: medium;
+        padding-left: 5em;
+    }
+    .logo{
+        height: 40px;
+        width: 100px;
+        margin-left: 2.5em;
+    }
+    #popup {
+        padding-left: 5em;
+        padding-right: 5em;
+    }
+
+    .buttoncrear {
+        position: relative;
+        padding-left: 8em;
+        padding-bottom: 1em;
+
+    }
+
+    .buttoncargar {
+        position: relative;
+        padding-left: 8em;
+        padding-bottom: 1em;
+   
+
+    }
+
+    .buttonguardar {
+        position: relative;
+        padding-left: 8em;
+        padding-bottom: 2em;
+   
+    }
+
+
+    .name {
+        height: 3em;
+        text-align: center;
+        padding: 0em;
+        font-size: x-large;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: rgb(14, 50, 50);
+    }
+
+    .tableform {
+        padding-left: 0em;
+    }
+
+    th {
+        padding: 0em;
+        justify-content: center;
+        border: solid 2px rgba(17, 125, 116, 0.356);
+        text-align: center;
+        background-color: rgba(17, 125, 116, 0.356);
+        color: rgb(14, 50, 50);
+        font-size: larger;
+        text-transform: uppercase;
+    }
+
+    td {
+        border: solid 2px rgba(17, 125, 116, 0.356);
+        text-align: center;
+        background-color: rgba(17, 125, 116, 0.356);
+        color: rgb(14, 50, 50);
+        font-size: medium;
+    }
+    .text-center-text-lg-start-border-border-white-mt-xl-5-pt-4{
+        font-size: smaller;
+        background-color: rgba(17, 125, 116, 0.356);
+
+}
+}

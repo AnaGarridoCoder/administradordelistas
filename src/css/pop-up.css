@@ -1,0 +1,8 @@
+#button {
+    font-family: 'archeologicapsregular';
+}
+
+form {
+    display: grid;
+    grid-column: auto;
+}

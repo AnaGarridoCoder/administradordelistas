@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'archeologicapsregular';
+    src: url('archeologicaps-webfont.woff2') format('woff2'),
+        url('archeologicaps-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Archeologicaps';
+    background-image: url(/fondo.jpg);
+    min-height: 100%;
+    position: relative;
+    z-index: 99;
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "cont1 cont2"
+}
+
+
+
+.header {
+    display: flex;
+    flex-direction: column;
+    grid-area: header;
+    justify-content: space-between;
+}
+
+.name {
+    padding: .625rem 1.25rem;
+}
+
+.cont1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+    grid-area: cont1;
+    padding: .625rem 1.25rem;
+}
+
+.cont2 {
+    display: flex;
+    flex-direction: column;
+    grid-area: cont2;
+}
+
+@media (max-width:1024px) {
+    body {
+        grid-template-columns:24.375rem 24.375rem;
+        grid-template-areas:
+            "header header" 
+            "cont1 cont1" 
+            "cont2 cont2"
+    }
+
+    #btn-abrir-pop1{
+       width: max-content;
+       margin-left: 32%;
+    }
+
+
+    #ia {
+        margin-left: 22%;
+        margin-top: 1.25rem;     
+    }
+    
+    #resultado{
+        width: 43.75rem;
+    }
+
+    header{
+        padding-left: 1.875rem;
+
+    }
+
+}
+
+
+     
+    
+
+    
+
